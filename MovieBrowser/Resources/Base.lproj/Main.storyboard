@@ -75,19 +75,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZD-wA-DXq">
-                                <rect key="frame" x="146.5" y="168" width="121.5" height="29"/>
+                                <rect key="frame" x="146.5" y="128" width="121.5" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="release date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgW-Lj-NZd">
-                                <rect key="frame" x="144.5" y="207" width="125.5" height="29"/>
+                                <rect key="frame" x="144.5" y="167" width="125.5" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="qqw-8Z-Irt">
-                                <rect key="frame" x="41.5" y="286" width="331" height="225"/>
+                                <rect key="frame" x="41.5" y="246" width="331" height="225"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3m8-UB-xxz">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="225"/>
@@ -110,7 +110,7 @@
                         <constraints>
                             <constraint firstItem="qqw-8Z-Irt" firstAttribute="centerX" secondItem="I3Q-TB-CT4" secondAttribute="centerX" id="93g-6m-yqd"/>
                             <constraint firstItem="qqw-8Z-Irt" firstAttribute="top" secondItem="MgW-Lj-NZd" secondAttribute="bottom" constant="50" id="ICo-FW-yQJ"/>
-                            <constraint firstItem="0ZD-wA-DXq" firstAttribute="top" secondItem="FNr-E9-cQu" secondAttribute="top" constant="80" id="Un0-d5-MGa"/>
+                            <constraint firstItem="0ZD-wA-DXq" firstAttribute="top" secondItem="FNr-E9-cQu" secondAttribute="top" constant="40" id="Un0-d5-MGa"/>
                             <constraint firstItem="MgW-Lj-NZd" firstAttribute="centerX" secondItem="I3Q-TB-CT4" secondAttribute="centerX" id="Zma-LU-SJX"/>
                             <constraint firstItem="MgW-Lj-NZd" firstAttribute="top" secondItem="0ZD-wA-DXq" secondAttribute="bottom" constant="10" id="hpg-N0-8LJ"/>
                             <constraint firstItem="qqw-8Z-Irt" firstAttribute="width" secondItem="I3Q-TB-CT4" secondAttribute="width" multiplier="0.8" id="iPl-Ot-FNW"/>
