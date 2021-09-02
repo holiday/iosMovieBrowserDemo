@@ -25,12 +25,12 @@ class SearchViewModel: ObservableObject {
             .sink { [weak self] (searchStr) in
                 guard let self = self else { return }
                 Network.movieSearch(query: searchStr)
-                    .sink { completion in
+                    .sink(receiveCompletion: { completion in
                         if case let .failure(error) = completion {
                             //should handle error here
                             print(error.localizedDescription)
                         }
-                    } receiveValue: { movieResults in
+                    }) { movieResults in
                         self.movieResults = movieResults.results
                     }.store(in: &self.cancellables)
             }.store(in: &cancellables)

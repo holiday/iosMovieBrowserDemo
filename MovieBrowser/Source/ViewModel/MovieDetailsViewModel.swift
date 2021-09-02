@@ -26,13 +26,13 @@ class MovieDetailsViewModel: ObservableObject {
                 
                 //Fetch image
                 Network.fetchImage(imageURL: imageURLString)
-                    .sink { (completion) in
+                    .sink(receiveCompletion: { (completion) in
                         if case let .failure(networkError) = completion {
                             print(networkError.localizedDescription)
                         }
-                    } receiveValue: { (uiImage) in
+                    }) { (uiImage) in
                         self.image = uiImage
-                    }.store(in: &self.cancellables)
+                }.store(in: &self.cancellables)
 
             }.store(in: &cancellables)
     }
